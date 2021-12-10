@@ -2,6 +2,7 @@ import 'package:best_practices_one/src/infrastructure/app_widget_keys.dart';
 import 'package:best_practices_one/src/presentation/features/details/ui/sample_item_details_view.dart';
 import 'package:best_practices_one/src/presentation/features/settings/ui/settings_view.dart';
 import 'package:best_practices_one/src/domain/entity/sample_item.dart';
+import 'package:best_practices_one/src/presentation/themes/app_colorscheme_ext.dart';
 import 'package:best_practices_one/src/presentation/themes/app_text_theme_ext.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_platform_widgets/flutter_platform_widgets.dart';
@@ -78,6 +79,39 @@ class SampleItemListView extends StatelessWidget {
           final item = items[index];
 
           return ListTile(
+            style: ListTileStyle.list,
+            dense: true,
+            shape: const RoundedRectangleBorder(
+              borderRadius: BorderRadius.all(Radius.circular(10)),
+            ),
+            iconColor: platformThemeData(
+              context, 
+              material: (data) => data.ownColor().appInversePrimary, 
+              cupertino: (data)=> data.ownColor().appInversePrimary),
+            textColor: platformThemeData(
+              context, 
+              material: (data) => data.ownColor().appOnSurfaceVariant, 
+              cupertino: (data) => data.ownColor().appOnSurfaceVariant),
+            contentPadding: EdgeInsetsGeometry.infinity,
+            tileColor:
+                platformThemeData(
+                  context, 
+                  material:(data) => data.ownColor().appSurfaceVariant, 
+                  cupertino: (data) => data.ownColor().appSurfaceVariant),
+            selectedTileColor:
+                platformThemeData(
+                  context, 
+                  material: (data) => data.ownColor().appPrimary, 
+                  cupertino: (data) => data.ownColor().appPrimary),
+            selectedColor:
+                platformThemeData(
+                  context, 
+                  material: (data) => data.ownColor().appSecondary, 
+                  cupertino: (data) => data.ownColor().appSecondary),
+            horizontalTitleGap: 1,
+            minVerticalPadding: 1,
+            minLeadingWidth: 1,
+            enableFeedback: true,
             key: listTileKey,
             title: Text(
               'SampleItem ${item.id}',
