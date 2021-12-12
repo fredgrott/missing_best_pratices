@@ -4,7 +4,9 @@
 
 import 'dart:ui';
 
-import 'package:best_practices_one/src/presentation/themes/app_color_system_base_line.dart';
+
+
+import 'package:best_practices_one/src/presentation/themes/app_colors.dart';
 import 'package:flutter/material.dart';
 
 import 'package:google_fonts/google_fonts.dart';
@@ -13,7 +15,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 TextStyle appTextStyleBodyLargeMaterialLight = TextStyle(
   debugLabel: "Body Large Material Light",
-  color: Color(appSystemBaseLineCorePaletteLightScheme.tertiary),
+  color: Color(materialLightSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSans().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 16,
@@ -25,7 +27,7 @@ TextStyle appTextStyleBodyLargeMaterialLight = TextStyle(
 
 TextStyle appTextStyleBodyMediumMaterialLight = TextStyle(
   debugLabel: "Body Medium Material Light",
-  color: Color(appSystemBaseLineCorePaletteLightScheme.tertiary),
+  color: Color(materialLightSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSans().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 14,
@@ -37,7 +39,7 @@ TextStyle appTextStyleBodyMediumMaterialLight = TextStyle(
 
 TextStyle appTextStyleBodySmallMaterialLight = TextStyle(
   debugLabel: "Body Small Material Light",
-  color: Color(appSystemBaseLineCorePaletteLightScheme.tertiary),
+  color: Color(materialLightSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSans().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 12,
@@ -49,7 +51,7 @@ TextStyle appTextStyleBodySmallMaterialLight = TextStyle(
 
 TextStyle appTextStyleDisplayLargeMaterialLight = TextStyle(
   debugLabel: "Display Large Material Light",
-  color: Color(appSystemBaseLineCorePaletteLightScheme.tertiary),
+  color: Color(materialLightSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSerif().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 57,
@@ -61,7 +63,7 @@ TextStyle appTextStyleDisplayLargeMaterialLight = TextStyle(
 
 TextStyle appTextStyleDisplayMediumMaterialLight = TextStyle(
   debugLabel: "Display Medium Material Light",
-  color: Color(appSystemBaseLineCorePaletteLightScheme.tertiary),
+  color: Color(materialLightSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSerif().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 45,
@@ -73,7 +75,7 @@ TextStyle appTextStyleDisplayMediumMaterialLight = TextStyle(
 
 TextStyle appTextStyleDisplaySmallMaterialLight = TextStyle(
   debugLabel: "Display Small Material Light",
-  color: Color(appSystemBaseLineCorePaletteLightScheme.tertiary),
+  color: Color(materialLightSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSerif().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 36,
@@ -85,7 +87,7 @@ TextStyle appTextStyleDisplaySmallMaterialLight = TextStyle(
 
 TextStyle appTextStyleHeadlineLargeMaterialLight = TextStyle(
   debugLabel: "Headline Large Material Light",
-  color: Color(appSystemBaseLineCorePaletteLightScheme.tertiary),
+  color: Color(materialLightSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSerif().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 32,
@@ -97,7 +99,7 @@ TextStyle appTextStyleHeadlineLargeMaterialLight = TextStyle(
 
 TextStyle appTextStyleHeadlineMediumMaterialLight = TextStyle(
   debugLabel: "Headline Medium Material Light",
-  color: Color(appSystemBaseLineCorePaletteLightScheme.tertiary),
+  color: Color(materialLightSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSerif().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 28,
@@ -109,7 +111,7 @@ TextStyle appTextStyleHeadlineMediumMaterialLight = TextStyle(
 
 TextStyle appTextStyleHeadlineSmallMaterialLight = TextStyle(
   debugLabel: "Headline Small Material Light",
-  color: Color(appSystemBaseLineCorePaletteLightScheme.tertiary),
+  color: Color(materialLightSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSerif().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 24,
@@ -121,7 +123,7 @@ TextStyle appTextStyleHeadlineSmallMaterialLight = TextStyle(
 
 TextStyle appTextStyleLabelLargeMaterialLight = TextStyle(
   debugLabel: "Label Large Material Light",
-  color: Color(appSystemBaseLineCorePaletteLightScheme.tertiary),
+  color: Color(materialLightSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSans().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 14,
@@ -133,7 +135,7 @@ TextStyle appTextStyleLabelLargeMaterialLight = TextStyle(
 
 TextStyle appTextStyleLabelMediumMaterialLight = TextStyle(
   debugLabel: "Label Medium Material Light",
-  color: Color(appSystemBaseLineCorePaletteLightScheme.tertiary),
+  color: Color(materialLightSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSans().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 12,
@@ -145,7 +147,7 @@ TextStyle appTextStyleLabelMediumMaterialLight = TextStyle(
 
 TextStyle appTextStyleLabelSmallMaterialLight = TextStyle(
   debugLabel: "Label Small Material Light",
-  color: Color(appSystemBaseLineCorePaletteLightScheme.tertiary),
+  color: Color(materialLightSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSans().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 11,
@@ -157,7 +159,7 @@ TextStyle appTextStyleLabelSmallMaterialLight = TextStyle(
 
 TextStyle appTextStyleTitleLargeMaterialLight = TextStyle(
   debugLabel: "Title Large Material Light",
-  color: Color(appSystemBaseLineCorePaletteLightScheme.tertiary),
+  color: Color(materialLightSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSerif().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 22,
@@ -172,14 +174,14 @@ TextStyle appTextStyleTitleLargeMaterialLight = TextStyle(
         10.0,
       ),
       blurRadius: 3.0,
-      color: Color(appSystemBaseLineCorePaletteLightScheme.tertiaryContainer),
+      color: Color(materialLightSystemScheme.tertiaryContainer),
     ),
   ],
 );
 
 TextStyle appTextStyleTitleMediumMaterialLight = TextStyle(
   debugLabel: "Title Medium Material Light",
-  color: Color(appSystemBaseLineCorePaletteLightScheme.tertiary),
+  color: Color(materialLightSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSerif().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 16,
@@ -190,13 +192,13 @@ TextStyle appTextStyleTitleMediumMaterialLight = TextStyle(
   shadows: <Shadow>[Shadow(
     offset: const Offset(10.0, 10.0,),
     blurRadius: 3.0,
-    color: Color(appSystemBaseLineCorePaletteLightScheme.tertiaryContainer),
+    color: Color(materialLightSystemScheme.tertiaryContainer),
   )],
 );
 
 TextStyle appTextStyleTitleSmallMaterialLight = TextStyle(
   debugLabel: "Title Small Material Light",
-  color: Color(appSystemBaseLineCorePaletteLightScheme.tertiary),
+  color: Color(materialLightSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSerif().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 14,
@@ -211,14 +213,14 @@ TextStyle appTextStyleTitleSmallMaterialLight = TextStyle(
         10.0,
       ),
       blurRadius: 3.0,
-      color: Color(appSystemBaseLineCorePaletteLightScheme.tertiaryContainer),
+      color: Color(materialLightSystemScheme.tertiaryContainer),
     ),
   ],
 );
 
 TextStyle appTextStyleBodyLargeMaterialDark = TextStyle(
   debugLabel: "Body Large Material Dark",
-  color: Color(appSystemBaseLineCorePaletteDarkScheme.tertiary),
+  color: Color(materialDarkSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSans().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 16,
@@ -230,7 +232,7 @@ TextStyle appTextStyleBodyLargeMaterialDark = TextStyle(
 
 TextStyle appTextStyleBodyMediumMaterialDark = TextStyle(
   debugLabel: "Body Medium Material Dark",
-  color: Color(appSystemBaseLineCorePaletteDarkScheme.tertiary),
+  color: Color(materialDarkSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSans().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 14,
@@ -242,7 +244,7 @@ TextStyle appTextStyleBodyMediumMaterialDark = TextStyle(
 
 TextStyle appTextStyleBodySmallMaterialDark = TextStyle(
   debugLabel: "Body Small Material Dark",
-  color: Color(appSystemBaseLineCorePaletteDarkScheme.tertiary),
+  color: Color(materialDarkSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSans().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 12,
@@ -254,7 +256,7 @@ TextStyle appTextStyleBodySmallMaterialDark = TextStyle(
 
 TextStyle appTextStyleDisplayLargeMaterialDark = TextStyle(
   debugLabel: "Display Large Material Dark",
-  color: Color(appSystemBaseLineCorePaletteDarkScheme.tertiary),
+  color: Color(materialDarkSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSerif().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 57,
@@ -266,7 +268,7 @@ TextStyle appTextStyleDisplayLargeMaterialDark = TextStyle(
 
 TextStyle appTextStyleDisplayMediumMaterialDark = TextStyle(
   debugLabel: "Display Medium Material Dark",
-  color: Color(appSystemBaseLineCorePaletteDarkScheme.tertiary),
+  color: Color(materialDarkSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSerif().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 45,
@@ -278,7 +280,7 @@ TextStyle appTextStyleDisplayMediumMaterialDark = TextStyle(
 
 TextStyle appTextStyleDisplaySmallMaterialDark = TextStyle(
   debugLabel: "Display Small Material Dark",
-  color: Color(appSystemBaseLineCorePaletteDarkScheme.tertiary),
+  color: Color(materialDarkSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSerif().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 36,
@@ -290,7 +292,7 @@ TextStyle appTextStyleDisplaySmallMaterialDark = TextStyle(
 
 TextStyle appTextStyleHeadlineLargeMaterialDark = TextStyle(
   debugLabel: "Headline Large Material Dark",
-  color: Color(appSystemBaseLineCorePaletteDarkScheme.tertiary),
+  color: Color(materialDarkSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSerif().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 32,
@@ -302,7 +304,7 @@ TextStyle appTextStyleHeadlineLargeMaterialDark = TextStyle(
 
 TextStyle appTextStyleHeadlineMediumMaterialDark = TextStyle(
   debugLabel: "Headline Medium Material Dark",
-  color: Color(appSystemBaseLineCorePaletteDarkScheme.tertiary),
+  color: Color(materialDarkSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSerif().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 28,
@@ -314,7 +316,7 @@ TextStyle appTextStyleHeadlineMediumMaterialDark = TextStyle(
 
 TextStyle appTextStyleHeadlineSmallMaterialDark = TextStyle(
   debugLabel: "Headline Small Material Dark",
-  color: Color(appSystemBaseLineCorePaletteDarkScheme.tertiary),
+  color: Color(materialDarkSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSerif().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 24,
@@ -326,7 +328,7 @@ TextStyle appTextStyleHeadlineSmallMaterialDark = TextStyle(
 
 TextStyle appTextStyleLabelLargeMaterialDark = TextStyle(
   debugLabel: "Label Large Material Dark",
-  color: Color(appSystemBaseLineCorePaletteDarkScheme.tertiary),
+  color: Color(materialDarkSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSans().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 14,
@@ -338,7 +340,7 @@ TextStyle appTextStyleLabelLargeMaterialDark = TextStyle(
 
 TextStyle appTextStyleLabelMediumMaterialDark = TextStyle(
   debugLabel: "Label Medium Material Dark",
-  color: Color(appSystemBaseLineCorePaletteDarkScheme.tertiary),
+  color: Color(materialDarkSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSans().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 12,
@@ -350,7 +352,7 @@ TextStyle appTextStyleLabelMediumMaterialDark = TextStyle(
 
 TextStyle appTextStyleLabelSmallMaterialDark = TextStyle(
   debugLabel: "Label Small Material Dark",
-  color: Color(appSystemBaseLineCorePaletteDarkScheme.tertiary),
+  color: Color(materialDarkSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSans().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 11,
@@ -362,7 +364,7 @@ TextStyle appTextStyleLabelSmallMaterialDark = TextStyle(
 
 TextStyle appTextStyleTitleLargeMaterialDark = TextStyle(
   debugLabel: "Title Large Material Dark",
-  color: Color(appSystemBaseLineCorePaletteDarkScheme.tertiary),
+  color: Color(materialDarkSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSerif().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 22,
@@ -377,14 +379,14 @@ TextStyle appTextStyleTitleLargeMaterialDark = TextStyle(
         10.0,
       ),
       blurRadius: 3.0,
-      color: Color(appSystemBaseLineCorePaletteDarkScheme.tertiaryContainer),
+      color: Color(materialDarkSystemScheme.tertiaryContainer),
     ),
   ],
 );
 
 TextStyle appTextStyleTitleMediumMaterialDark = TextStyle(
   debugLabel: "Title Meidum Material Dark",
-  color: Color(appSystemBaseLineCorePaletteDarkScheme.tertiary),
+  color: Color(materialDarkSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSerif().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 16,
@@ -399,14 +401,14 @@ TextStyle appTextStyleTitleMediumMaterialDark = TextStyle(
         10.0,
       ),
       blurRadius: 3.0,
-      color: Color(appSystemBaseLineCorePaletteDarkScheme.tertiaryContainer),
+      color: Color(materialDarkSystemScheme.tertiaryContainer),
     ),
   ],
 );
 
 TextStyle appTextStyleTitleSmallMaterialDark = TextStyle(
   debugLabel: "Title Small Material Dark",
-  color: Color(appSystemBaseLineCorePaletteDarkScheme.tertiary),
+  color: Color(materialDarkSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSerif().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 14,
@@ -421,14 +423,14 @@ TextStyle appTextStyleTitleSmallMaterialDark = TextStyle(
         10.0,
       ),
       blurRadius: 3.0,
-      color: Color(appSystemBaseLineCorePaletteDarkScheme.tertiaryContainer),
+      color: Color(materialDarkSystemScheme.tertiaryContainer),
     ),
   ],
 );
 
 TextStyle appTextStyleBodyLargeCupertino = TextStyle(
   debugLabel: "Body Large Cupertino",
-  color: Color(appSystemBaseLineCorePaletteCupertinoScheme.tertiary),
+  color: Color(cupertinoSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSans().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 16,
@@ -440,7 +442,7 @@ TextStyle appTextStyleBodyLargeCupertino = TextStyle(
 
 TextStyle appTextStyleBodyMediumCupertino = TextStyle(
   debugLabel: "Body Medium Cupertino",
-  color: Color(appSystemBaseLineCorePaletteCupertinoScheme.tertiary),
+  color: Color(cupertinoSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSans().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 14,
@@ -452,7 +454,7 @@ TextStyle appTextStyleBodyMediumCupertino = TextStyle(
 
 TextStyle appTextStyleBodySmallCupertino = TextStyle(
   debugLabel: "Body Small Cupertino",
-  color: Color(appSystemBaseLineCorePaletteCupertinoScheme.tertiary),
+  color: Color(cupertinoSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSans().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 12,
@@ -464,7 +466,7 @@ TextStyle appTextStyleBodySmallCupertino = TextStyle(
 
 TextStyle appTextStyleDisplayLargeCupertino = TextStyle(
   debugLabel: "Display Large Cupertino",
-  color: Color(appSystemBaseLineCorePaletteCupertinoScheme.tertiary),
+  color: Color(cupertinoSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSerif().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 57,
@@ -476,7 +478,7 @@ TextStyle appTextStyleDisplayLargeCupertino = TextStyle(
 
 TextStyle appTextStyleDisplayMediumCupertino = TextStyle(
   debugLabel: "Display Medium Cupertino",
-  color: Color(appSystemBaseLineCorePaletteCupertinoScheme.tertiary),
+  color: Color(cupertinoSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSerif().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 45,
@@ -488,7 +490,7 @@ TextStyle appTextStyleDisplayMediumCupertino = TextStyle(
 
 TextStyle appTextStyleDisplaySmallCupertino = TextStyle(
   debugLabel: "Display Small Cupertino",
-  color: Color(appSystemBaseLineCorePaletteCupertinoScheme.tertiary),
+  color: Color(cupertinoSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSerif().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 36,
@@ -500,7 +502,7 @@ TextStyle appTextStyleDisplaySmallCupertino = TextStyle(
 
 TextStyle appTextStyleHeadlineLargeCupertino = TextStyle(
   debugLabel: "Headline Large Cupertino",
-  color: Color(appSystemBaseLineCorePaletteCupertinoScheme.tertiary),
+  color: Color(cupertinoSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSerif().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 32,
@@ -512,7 +514,7 @@ TextStyle appTextStyleHeadlineLargeCupertino = TextStyle(
 
 TextStyle appTextStyleHeadlineMediumCupertino = TextStyle(
   debugLabel: "Headline Medium Cupertino",
-  color: Color(appSystemBaseLineCorePaletteCupertinoScheme.tertiary),
+  color: Color(cupertinoSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSerif().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 28,
@@ -524,7 +526,7 @@ TextStyle appTextStyleHeadlineMediumCupertino = TextStyle(
 
 TextStyle appTextStyleHeadlineSmallCupertino = TextStyle(
   debugLabel: "Headline Small Cupertino",
-  color: Color(appSystemBaseLineCorePaletteCupertinoScheme.tertiary),
+  color: Color(cupertinoSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSerif().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 24,
@@ -536,7 +538,7 @@ TextStyle appTextStyleHeadlineSmallCupertino = TextStyle(
 
 TextStyle appTextStyleLabelLargeCupertino = TextStyle(
   debugLabel: "Label Large Cupertino",
-  color: Color(appSystemBaseLineCorePaletteCupertinoScheme.tertiary),
+  color: Color(cupertinoSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSans().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 14,
@@ -548,7 +550,7 @@ TextStyle appTextStyleLabelLargeCupertino = TextStyle(
 
 TextStyle appTextStyleLabelMediumCupertino = TextStyle(
   debugLabel: "Label Medium Cupertino",
-  color: Color(appSystemBaseLineCorePaletteCupertinoScheme.tertiary),
+  color: Color(cupertinoSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSans().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 12,
@@ -560,7 +562,7 @@ TextStyle appTextStyleLabelMediumCupertino = TextStyle(
 
 TextStyle appTextStyleLabelSmallCupertino = TextStyle(
   debugLabel: "Label Small Cupertino",
-  color: Color(appSystemBaseLineCorePaletteCupertinoScheme.tertiary),
+  color: Color(cupertinoSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSans().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 11,
@@ -572,7 +574,7 @@ TextStyle appTextStyleLabelSmallCupertino = TextStyle(
 
 TextStyle appTextStyleTitleLargeCupertino = TextStyle(
   debugLabel: "Title Large Cupertino",
-  color: Color(appSystemBaseLineCorePaletteCupertinoScheme.tertiary),
+  color: Color(cupertinoSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSerif().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 22,
@@ -587,14 +589,14 @@ TextStyle appTextStyleTitleLargeCupertino = TextStyle(
         10.0,
       ),
       blurRadius: 3.0,
-      color: Color(appSystemBaseLineCorePaletteCupertinoScheme.tertiaryContainer),
+      color: Color(cupertinoSystemScheme.tertiaryContainer),
     ),
   ],
 );
 
 TextStyle appTextStyleTitleMediumCupertino = TextStyle(
   debugLabel: "Title Meidum Cupertino",
-  color: Color(appSystemBaseLineCorePaletteCupertinoScheme.tertiary),
+  color: Color(cupertinoSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSerif().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 16,
@@ -609,14 +611,14 @@ TextStyle appTextStyleTitleMediumCupertino = TextStyle(
         10.0,
       ),
       blurRadius: 3.0,
-      color: Color(appSystemBaseLineCorePaletteCupertinoScheme.tertiaryContainer),
+      color: Color(cupertinoSystemScheme.tertiaryContainer),
     ),
   ],
 );
 
 TextStyle appTextStyleTitleSmallCupertino = TextStyle(
   debugLabel: "Title Small Cupertino",
-  color: Color(appSystemBaseLineCorePaletteCupertinoScheme.tertiary),
+  color: Color(cupertinoSystemScheme.tertiary),
   fontFamily: GoogleFonts.notoSerif().fontFamily,
   fontStyle: FontStyle.normal,
   fontSize: 14,
@@ -631,7 +633,7 @@ TextStyle appTextStyleTitleSmallCupertino = TextStyle(
         10.0,
       ),
       blurRadius: 3.0,
-      color: Color(appSystemBaseLineCorePaletteCupertinoScheme.tertiaryContainer),
+      color: Color(cupertinoSystemScheme.tertiaryContainer),
     ),
   ],
 );

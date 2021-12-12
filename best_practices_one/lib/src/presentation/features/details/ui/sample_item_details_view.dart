@@ -1,3 +1,5 @@
+import 'package:adaptive_breakpoints/adaptive_breakpoints.dart';
+
 import 'package:best_practices_one/src/infrastructure/app_widget_keys.dart';
 import 'package:best_practices_one/src/presentation/features/home/ui/sample_item_list_view.dart';
 import 'package:best_practices_one/src/presentation/themes/app_text_theme_ext.dart';
@@ -22,7 +24,9 @@ class SampleItemDetailsView extends StatelessWidget {
 
 
         leading: PlatformIconButton(
-          icon: const Icon(Icons.arrow_back),
+          icon: const Icon(
+            Icons.arrow_back,
+            ),
           onPressed: () {
             // Navigate to the settings page. If the user leaves and returns
             // to the app after it has been killed while running in the
@@ -32,6 +36,17 @@ class SampleItemDetailsView extends StatelessWidget {
               SampleItemListView.routeName,
             );
           },
+          cupertino: (_, __,)=> CupertinoIconButtonData(
+           minSize: getWindowType(context) == AdaptiveWindowType.medium
+                ? 48.0
+                : 24.0,
+ 
+          ),
+          material: (_, __,) => MaterialIconButtonData(
+            iconSize: getWindowType(context) == AdaptiveWindowType.medium
+                ? 48.0
+                : 24.0,
+           ),
         ),
 
         title: PlatformText(

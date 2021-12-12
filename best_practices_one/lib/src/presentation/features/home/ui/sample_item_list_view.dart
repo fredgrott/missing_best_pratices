@@ -1,7 +1,8 @@
+import 'package:adaptive_breakpoints/adaptive_breakpoints.dart';
+import 'package:best_practices_one/src/domain/entity/sample_item.dart';
 import 'package:best_practices_one/src/infrastructure/app_widget_keys.dart';
 import 'package:best_practices_one/src/presentation/features/details/ui/sample_item_details_view.dart';
 import 'package:best_practices_one/src/presentation/features/settings/ui/settings_view.dart';
-import 'package:best_practices_one/src/domain/entity/sample_item.dart';
 import 'package:best_practices_one/src/presentation/themes/app_colorscheme_ext.dart';
 import 'package:best_practices_one/src/presentation/themes/app_text_theme_ext.dart';
 import 'package:flutter/material.dart';
@@ -47,16 +48,31 @@ class SampleItemListView extends StatelessWidget {
 
           ),
         trailingActions: [
-          IconButton(
+          PlatformIconButton(
             icon: const Icon(Icons.settings),
             onPressed: () {
               // Navigate to the settings page. If the user leaves and returns
               // to the app after it has been killed while running in the
               // background, the navigation stack is restored.
               Navigator.restorablePushNamed(context, SettingsView.routeName,);
+              
             },
+            // using adaptive breakpoints to adapt iconsize to platform size
+            material: (_,__,) => MaterialIconButtonData(
+              iconSize: getWindowType(context) == AdaptiveWindowType.medium
+                  ? 48.0
+                  : 24.0,
+            ),
+            cupertino: (_,__,) => CupertinoIconButtonData(
+              minSize: getWindowType(context) == AdaptiveWindowType.medium
+                  ? 48.0
+                  : 24.0,
+
+            ),
+
           ),
         ],
+        
       ),
 
       // To work with lists that may contain a large number of items, it’s best

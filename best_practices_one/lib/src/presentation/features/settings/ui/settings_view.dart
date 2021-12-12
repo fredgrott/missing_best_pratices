@@ -1,3 +1,5 @@
+import 'package:adaptive_breakpoints/adaptive_breakpoints.dart';
+
 import 'package:best_practices_one/src/infrastructure/app_widget_keys.dart';
 import 'package:best_practices_one/src/presentation/features/home/ui/sample_item_list_view.dart';
 import 'package:best_practices_one/src/presentation/themes/app_colorscheme_ext.dart';
@@ -55,6 +57,12 @@ class SettingsView extends StatelessWidget {
               SampleItemListView.routeName,
             );
           },
+          material: (_,__,) => MaterialIconButtonData(
+            iconSize: getWindowType(context) == AdaptiveWindowType.medium
+                ? 48.0
+                : 24.0,
+
+          ),
         ),
       ),
       body: Padding(

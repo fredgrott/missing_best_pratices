@@ -2,22 +2,24 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-import 'package:best_practices_one/src/presentation/themes/app_color_system_base_line.dart';
+
+
+import 'package:best_practices_one/src/presentation/themes/app_colors.dart';
 import 'package:best_practices_one/src/presentation/themes/app_theme_vars.dart';
 import 'package:flutter/material.dart';
 
 
 IconThemeData appMaterialLightSelectedIconThemeData = IconThemeData(
-  color: Color(appSystemBaseLineCorePaletteLightScheme.primaryContainer),
+  color: Color(materialLightSystemScheme.primaryContainer),
   size: appIconSize,
 );
 
 IconThemeData appMaterialDarkSelectedIconThemeData = IconThemeData(
-  color: Color(appSystemBaseLineCorePaletteDarkScheme.primaryContainer),
+  color: Color(materialDarkSystemScheme.primaryContainer),
   size: appIconSize,
 );
 
 IconThemeData appCupertinoSelectedIconThemeData = IconThemeData(
-  color: Color(appSystemBaseLineCorePaletteCupertinoScheme.primaryContainer),
+  color: Color(cupertinoSystemScheme.primaryContainer),
   size: appIconSize,
 );

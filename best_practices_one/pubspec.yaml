@@ -24,6 +24,8 @@ dependencies:
   logging_appenders: ^1.0.0
   flutter_platform_widgets: ^1.11.1
   material_color_utilities: ^0.1.2
+  adaptive_breakpoints: ^0.1.1
+  dynamic_color: ^0.1.0
 
 
 

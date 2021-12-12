@@ -2,7 +2,9 @@
 // Use of this source code is governed by a BSD-style
 // license that can be found in the LICENSE file.
 
-import 'package:best_practices_one/src/presentation/themes/app_color_system_base_line.dart';
+
+
+import 'package:best_practices_one/src/presentation/themes/app_colors.dart';
 import 'package:best_practices_one/src/presentation/themes/app_selected_icon_themedata.dart';
 import 'package:best_practices_one/src/presentation/themes/app_selectedlabelstyle.dart';
 import 'package:best_practices_one/src/presentation/themes/app_theme_vars.dart';
@@ -13,7 +15,7 @@ import 'package:flutter/material.dart';
 
 NavigationRailThemeData appMaterialLightNavRailThemeData =
     NavigationRailThemeData(
-      backgroundColor: Color(appSystemBaseLineCorePaletteLightScheme.background),
+      backgroundColor: Color(materialLightSystemScheme.background),
       elevation: appElevation,
       unselectedLabelTextStyle: appMaterialLightUnselectedLabelStyle,
       selectedLabelTextStyle: appMaterialLightSelectedLabelStyle,
@@ -24,7 +26,7 @@ NavigationRailThemeData appMaterialLightNavRailThemeData =
 
 NavigationRailThemeData appMaterialDarkNavRailThemeData =
     NavigationRailThemeData(
-  backgroundColor: Color(appSystemBaseLineCorePaletteDarkScheme.background),
+  backgroundColor: Color(materialDarkSystemScheme.background),
   elevation: appElevation,
   unselectedLabelTextStyle: appMaterialDarkUnselectedLabelStyle,
   selectedLabelTextStyle: appMaterialDarkSelectedLabelStyle,
@@ -35,7 +37,7 @@ NavigationRailThemeData appMaterialDarkNavRailThemeData =
 
 NavigationRailThemeData appCupertinoNavRailThemeData =
     NavigationRailThemeData(
-  backgroundColor: Color(appSystemBaseLineCorePaletteCupertinoScheme.background),
+  backgroundColor: Color(cupertinoSystemScheme.background),
   elevation:appElevation,
   unselectedLabelTextStyle: appCupertinoUnselectedLabelStyle,
   selectedLabelTextStyle: appCupertinoSelectedLabelStyle,
