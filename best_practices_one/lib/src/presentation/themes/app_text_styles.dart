@@ -7,6 +7,7 @@ import 'dart:ui';
 
 
 import 'package:best_practices_one/src/presentation/themes/app_colors.dart';
+import 'package:best_practices_one/src/presentation/themes/app_text_shadows.dart';
 import 'package:flutter/material.dart';
 
 import 'package:google_fonts/google_fonts.dart';
@@ -59,6 +60,7 @@ TextStyle appTextStyleDisplayLargeMaterialLight = TextStyle(
   height: 1.12,
   textBaseline: TextBaseline.alphabetic,
   fontFeatures: const <FontFeature>[FontFeature.enable('kern')],
+  shadows: [brandTwoDisplayShadowMaterialLight,],
 );
 
 TextStyle appTextStyleDisplayMediumMaterialLight = TextStyle(
@@ -71,6 +73,9 @@ TextStyle appTextStyleDisplayMediumMaterialLight = TextStyle(
   textBaseline: TextBaseline.alphabetic,
   height: 1.16,
   fontFeatures: const <FontFeature>[FontFeature.enable('kern')],
+  shadows: [
+    brandTwoDisplayShadowMaterialLight,
+  ],
 );
 
 TextStyle appTextStyleDisplaySmallMaterialLight = TextStyle(
@@ -83,6 +88,9 @@ TextStyle appTextStyleDisplaySmallMaterialLight = TextStyle(
   textBaseline: TextBaseline.alphabetic,
   height: 1.22,
   fontFeatures: const <FontFeature>[FontFeature.enable('kern')],
+  shadows: [
+    brandTwoDisplayShadowMaterialLight,
+  ],
 );
 
 TextStyle appTextStyleHeadlineLargeMaterialLight = TextStyle(
@@ -95,6 +103,7 @@ TextStyle appTextStyleHeadlineLargeMaterialLight = TextStyle(
   textBaseline: TextBaseline.alphabetic,
   height: 1.25,
   fontFeatures: const <FontFeature>[FontFeature.enable('kern')],
+  shadows: [brandThreeHeadlineShadowMaterialLight],
 );
 
 TextStyle appTextStyleHeadlineMediumMaterialLight = TextStyle(
@@ -107,6 +116,7 @@ TextStyle appTextStyleHeadlineMediumMaterialLight = TextStyle(
   textBaseline: TextBaseline.alphabetic,
   height: 1.29,
   fontFeatures: const <FontFeature>[FontFeature.enable('kern')],
+  shadows: [brandThreeHeadlineShadowMaterialLight],
 );
 
 TextStyle appTextStyleHeadlineSmallMaterialLight = TextStyle(
@@ -119,6 +129,7 @@ TextStyle appTextStyleHeadlineSmallMaterialLight = TextStyle(
   textBaseline: TextBaseline.alphabetic,
   height: 1.33,
   fontFeatures: const <FontFeature>[FontFeature.enable('kern')],
+  shadows: [brandThreeHeadlineShadowMaterialLight],
 );
 
 TextStyle appTextStyleLabelLargeMaterialLight = TextStyle(
@@ -168,14 +179,7 @@ TextStyle appTextStyleTitleLargeMaterialLight = TextStyle(
   height: 1.27,
   fontFeatures: const <FontFeature>[FontFeature.enable('kern')],
   shadows: <Shadow>[
-    Shadow(
-      offset: const Offset(
-        10.0,
-        10.0,
-      ),
-      blurRadius: 3.0,
-      color: Color(materialLightSystemScheme.tertiaryContainer),
-    ),
+    brandOneTitleShadowMaterialLight,
   ],
 );
 
@@ -189,11 +193,9 @@ TextStyle appTextStyleTitleMediumMaterialLight = TextStyle(
   textBaseline: TextBaseline.alphabetic,
   height: 1.5,
   fontFeatures: const <FontFeature>[FontFeature.enable('kern')],
-  shadows: <Shadow>[Shadow(
-    offset: const Offset(10.0, 10.0,),
-    blurRadius: 3.0,
-    color: Color(materialLightSystemScheme.tertiaryContainer),
-  )],
+  shadows: <Shadow>[
+    brandOneTitleShadowMaterialLight,
+  ],
 );
 
 TextStyle appTextStyleTitleSmallMaterialLight = TextStyle(
@@ -207,14 +209,7 @@ TextStyle appTextStyleTitleSmallMaterialLight = TextStyle(
   height: 1.43,
   fontFeatures: const <FontFeature>[FontFeature.enable('kern')],
   shadows: <Shadow>[
-    Shadow(
-      offset: const Offset(
-        10.0,
-        10.0,
-      ),
-      blurRadius: 3.0,
-      color: Color(materialLightSystemScheme.tertiaryContainer),
-    ),
+    brandOneTitleShadowMaterialLight,
   ],
 );
 
@@ -264,6 +259,7 @@ TextStyle appTextStyleDisplayLargeMaterialDark = TextStyle(
   height: 1.12,
   textBaseline: TextBaseline.alphabetic,
   fontFeatures: const <FontFeature>[FontFeature.enable('kern')],
+  shadows: [brandTwoDisplayShadowMaterialDark],
 );
 
 TextStyle appTextStyleDisplayMediumMaterialDark = TextStyle(
@@ -276,6 +272,7 @@ TextStyle appTextStyleDisplayMediumMaterialDark = TextStyle(
   textBaseline: TextBaseline.alphabetic,
   height: 1.16,
   fontFeatures: const <FontFeature>[FontFeature.enable('kern')],
+  shadows: [brandTwoDisplayShadowMaterialDark],
 );
 
 TextStyle appTextStyleDisplaySmallMaterialDark = TextStyle(
@@ -288,6 +285,7 @@ TextStyle appTextStyleDisplaySmallMaterialDark = TextStyle(
   textBaseline: TextBaseline.alphabetic,
   height: 1.22,
   fontFeatures: const <FontFeature>[FontFeature.enable('kern')],
+  shadows: [brandTwoDisplayShadowMaterialDark],
 );
 
 TextStyle appTextStyleHeadlineLargeMaterialDark = TextStyle(
@@ -300,6 +298,7 @@ TextStyle appTextStyleHeadlineLargeMaterialDark = TextStyle(
   textBaseline: TextBaseline.alphabetic,
   height: 1.25,
   fontFeatures: const <FontFeature>[FontFeature.enable('kern')],
+  shadows: [brandThreeHeadlineShadowMaterialDark],
 );
 
 TextStyle appTextStyleHeadlineMediumMaterialDark = TextStyle(
@@ -312,6 +311,7 @@ TextStyle appTextStyleHeadlineMediumMaterialDark = TextStyle(
   textBaseline: TextBaseline.alphabetic,
   height: 1.29,
   fontFeatures: const <FontFeature>[FontFeature.enable('kern')],
+  shadows: [brandThreeHeadlineShadowMaterialDark],
 );
 
 TextStyle appTextStyleHeadlineSmallMaterialDark = TextStyle(
@@ -324,6 +324,7 @@ TextStyle appTextStyleHeadlineSmallMaterialDark = TextStyle(
   textBaseline: TextBaseline.alphabetic,
   height: 1.33,
   fontFeatures: const <FontFeature>[FontFeature.enable('kern')],
+  shadows: [brandThreeHeadlineShadowMaterialDark],
 );
 
 TextStyle appTextStyleLabelLargeMaterialDark = TextStyle(
@@ -373,14 +374,7 @@ TextStyle appTextStyleTitleLargeMaterialDark = TextStyle(
   height: 1.27,
   fontFeatures: const <FontFeature>[FontFeature.enable('kern')],
   shadows: <Shadow>[
-    Shadow(
-      offset: const Offset(
-        10.0,
-        10.0,
-      ),
-      blurRadius: 3.0,
-      color: Color(materialDarkSystemScheme.tertiaryContainer),
-    ),
+    brandOneTitleShadowMaterialDark,
   ],
 );
 
@@ -395,14 +389,7 @@ TextStyle appTextStyleTitleMediumMaterialDark = TextStyle(
   height: 1.5,
   fontFeatures: const <FontFeature>[FontFeature.enable('kern')],
   shadows: <Shadow>[
-    Shadow(
-      offset: const Offset(
-        10.0,
-        10.0,
-      ),
-      blurRadius: 3.0,
-      color: Color(materialDarkSystemScheme.tertiaryContainer),
-    ),
+    brandOneTitleShadowMaterialDark,
   ],
 );
 
@@ -417,14 +404,7 @@ TextStyle appTextStyleTitleSmallMaterialDark = TextStyle(
   height: 1.43,
   fontFeatures: const <FontFeature>[FontFeature.enable('kern')],
   shadows: <Shadow>[
-    Shadow(
-      offset: const Offset(
-        10.0,
-        10.0,
-      ),
-      blurRadius: 3.0,
-      color: Color(materialDarkSystemScheme.tertiaryContainer),
-    ),
+    brandOneTitleShadowMaterialDark,
   ],
 );
 
@@ -474,6 +454,7 @@ TextStyle appTextStyleDisplayLargeCupertino = TextStyle(
   height: 1.12,
   textBaseline: TextBaseline.alphabetic,
   fontFeatures: const <FontFeature>[FontFeature.enable('kern')],
+  shadows: [brandTwoDisplayShadowCupertino],
 );
 
 TextStyle appTextStyleDisplayMediumCupertino = TextStyle(
@@ -486,6 +467,7 @@ TextStyle appTextStyleDisplayMediumCupertino = TextStyle(
   textBaseline: TextBaseline.alphabetic,
   height: 1.16,
   fontFeatures: const <FontFeature>[FontFeature.enable('kern')],
+  shadows: [brandTwoDisplayShadowCupertino],
 );
 
 TextStyle appTextStyleDisplaySmallCupertino = TextStyle(
@@ -498,6 +480,7 @@ TextStyle appTextStyleDisplaySmallCupertino = TextStyle(
   textBaseline: TextBaseline.alphabetic,
   height: 1.22,
   fontFeatures: const <FontFeature>[FontFeature.enable('kern')],
+  shadows: [brandTwoDisplayShadowCupertino],
 );
 
 TextStyle appTextStyleHeadlineLargeCupertino = TextStyle(
@@ -510,6 +493,7 @@ TextStyle appTextStyleHeadlineLargeCupertino = TextStyle(
   textBaseline: TextBaseline.alphabetic,
   height: 1.25,
   fontFeatures: const <FontFeature>[FontFeature.enable('kern')],
+  shadows: [brandThreeHeadlineShadowCupertino],
 );
 
 TextStyle appTextStyleHeadlineMediumCupertino = TextStyle(
@@ -522,6 +506,7 @@ TextStyle appTextStyleHeadlineMediumCupertino = TextStyle(
   textBaseline: TextBaseline.alphabetic,
   height: 1.29,
   fontFeatures: const <FontFeature>[FontFeature.enable('kern')],
+  shadows: [brandThreeHeadlineShadowCupertino],
 );
 
 TextStyle appTextStyleHeadlineSmallCupertino = TextStyle(
@@ -534,6 +519,7 @@ TextStyle appTextStyleHeadlineSmallCupertino = TextStyle(
   textBaseline: TextBaseline.alphabetic,
   height: 1.33,
   fontFeatures: const <FontFeature>[FontFeature.enable('kern')],
+  shadows: [brandThreeHeadlineShadowCupertino],
 );
 
 TextStyle appTextStyleLabelLargeCupertino = TextStyle(
@@ -583,14 +569,7 @@ TextStyle appTextStyleTitleLargeCupertino = TextStyle(
   height: 1.27,
   fontFeatures: const <FontFeature>[FontFeature.enable('kern')],
   shadows: <Shadow>[
-    Shadow(
-      offset: const Offset(
-        10.0,
-        10.0,
-      ),
-      blurRadius: 3.0,
-      color: Color(cupertinoSystemScheme.tertiaryContainer),
-    ),
+    brandOneTitleShadowCupertino,
   ],
 );
 
@@ -605,14 +584,7 @@ TextStyle appTextStyleTitleMediumCupertino = TextStyle(
   height: 1.5,
   fontFeatures: const <FontFeature>[FontFeature.enable('kern')],
   shadows: <Shadow>[
-    Shadow(
-      offset: const Offset(
-        10.0,
-        10.0,
-      ),
-      blurRadius: 3.0,
-      color: Color(cupertinoSystemScheme.tertiaryContainer),
-    ),
+    brandOneTitleShadowCupertino,
   ],
 );
 
@@ -627,13 +599,6 @@ TextStyle appTextStyleTitleSmallCupertino = TextStyle(
   height: 1.43,
   fontFeatures: const <FontFeature>[FontFeature.enable('kern')],
   shadows: <Shadow>[
-    Shadow(
-      offset: const Offset(
-        10.0,
-        10.0,
-      ),
-      blurRadius: 3.0,
-      color: Color(cupertinoSystemScheme.tertiaryContainer),
-    ),
+    brandOneTitleShadowCupertino,
   ],
 );
